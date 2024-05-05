@@ -4,6 +4,12 @@ const lineWidth = 15;
 let direction = 1;
 let invaderInterval;
 
+let explosionSound = new Audio('sounds/explosion.wav');
+explosionSound.volume = 0.2;
+let laserSound = new Audio('sounds/laser.wav');
+laserSound.volume = 0.08;
+
+
 for (let i = 0; i < 225; i++) {
     const square = document.createElement('div');
     grid.appendChild(square);
@@ -107,6 +113,9 @@ function shoot(e) {
     let laserId;
     let currentLaserIndex = currentPlayerPosition;
 
+    laserSound.currentTime = 0;
+    laserSound.play();
+
     function moveLaser() {
         if (squares[currentLaserIndex].classList.contains('laser')) squares[currentLaserIndex].classList.remove('laser');
         currentLaserIndex -= lineWidth;
@@ -124,6 +133,9 @@ function shoot(e) {
             squares[currentLaserIndex].classList.remove('laser');
             squares[currentLaserIndex].classList.remove('invader');
             squares[currentLaserIndex].classList.add('boom');
+
+            explosionSound.currentTime = 0;
+            explosionSound.play();
 
             setTimeout(() => {
                 squares[currentLaserIndex].classList.remove('boom');
@@ -151,7 +163,7 @@ function removeListeners() {
 }
 
 
-let myAudio = new Audio('video/soundtrack.mp3');
+let myAudio = new Audio('sounds/soundtrack.mp3');
 if (typeof myAudio.loop == 'boolean')
 {
     myAudio.loop = true;
