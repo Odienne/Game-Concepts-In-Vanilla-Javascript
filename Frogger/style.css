@@ -1,0 +1,62 @@
+h3 {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#grid {
+    width: 720px;
+    height: 720px;
+    border: 1px black solid;
+
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#grid div {
+    height: 80px;
+    width: 80px;
+}
+
+#grid div:not(.l1, .l2, .l3,.l4,.l5, .c1, .c2,.c3) {
+    background-color: #d3ffd3;
+}
+
+.l1, .l2 {
+    background-color: chocolate;
+}
+
+.l3, .l4, .l5 {
+    background-color: deepskyblue;
+}
+
+.c1 {
+    background: url("./images/snake.png") no-repeat center;
+    background-color: #e0e0e0;
+}
+
+.c2, .c3 {
+    background-color: #e0e0e0;
+}
+
+.frog {
+    background: url("./images/frog.png") no-repeat center !important;
+}
+
+.flower {
+    background: url("./images/flower.png") no-repeat center;
+}
+.grass {
+    background: url("./images/grass.png") no-repeat center;
+    background-size: 70%;
+}
+.home {
+    background: url("./images/home.png") no-repeat center;
+}

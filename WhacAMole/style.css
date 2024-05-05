@@ -1,0 +1,48 @@
+h2 {
+    text-align: center;
+}
+
+#grid {
+    margin: auto;
+    width: 606px;
+    height: 600px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+button {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+html:hover {
+    cursor: url('./images/hammer.png'), auto;
+}
+html:active {
+    cursor: url('./images/hammer-rotated.png'), auto;
+}
+
+.square {
+    height: 200px;
+    width: 200px;
+    border: 1px red solid;
+}
+
+.square.mole {
+    background: url("./images/smallmole.jpg") no-repeat center;
+    background-size: cover;
+}

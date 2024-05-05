@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Frogger</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+
+<h3>Time left : <span id="time-left">30</span>s</h3>
+<h3>Result : <span id="result"></span></h3>
+
+<div class="buttons">
+    <button id="play-button">Start/Pause</button>
+</div>
+
+<div id="grid">
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="ending-block home"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+
+    <div class="log-left l1"></div>
+    <div class="log-left l2"></div>
+    <div class="log-left l3"></div>
+    <div class="log-left l4"></div>
+    <div class="log-left l5"></div>
+    <div class="log-left l1"></div>
+    <div class="log-left l2"></div>
+    <div class="log-left l3"></div>
+    <div class="log-left l4"></div>
+
+    <div class="log-right l5"></div>
+    <div class="log-right l1"></div>
+    <div class="log-right l2"></div>
+    <div class="log-right l3"></div>
+    <div class="log-right l4"></div>
+    <div class="log-right l5"></div>
+    <div class="log-right l1"></div>
+    <div class="log-right l2"></div>
+    <div class="log-right l3"></div>
+
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+    <div class="grass"></div>
+
+    <div class="car-left c3"></div>
+    <div class="car-left c1"></div>
+    <div class="car-left c2"></div>
+    <div class="car-left c3"></div>
+    <div class="car-left c1"></div>
+    <div class="car-left c2"></div>
+    <div class="car-left c3"></div>
+    <div class="car-left c1"></div>
+    <div class="car-left c2"></div>
+
+    <div class="car-right c1"></div>
+    <div class="car-right c2"></div>
+    <div class="car-right c3"></div>
+    <div class="car-right c1"></div>
+    <div class="car-right c2"></div>
+    <div class="car-right c3"></div>
+    <div class="car-right c1"></div>
+    <div class="car-right c2"></div>
+    <div class="car-right c3"></div>
+
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+
+
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower starting-block frog"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

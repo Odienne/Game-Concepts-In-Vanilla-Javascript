@@ -1,0 +1,50 @@
+#grid {
+    width: 750px;
+    height: 750px;
+    border: 1px black solid;
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 50px;
+    position: relative;
+    z-index: 10;
+}
+
+#grid div {
+    width: 50px;
+    height: 50px;
+}
+
+.invader {
+    background: url("./images/alien.png") no-repeat center;
+    background-size: 50px;
+}
+
+.ship {
+    background: url("./images/ship.png") no-repeat center;
+    background-size: 50px;
+}
+
+.laser {
+    background: url("./images/laser.png") no-repeat center;
+    background-size: 50px;
+    transform: rotate(-90deg);
+}
+.boom {
+    background: url("./images/explosion.png") no-repeat center;
+    background-size: 50px;
+}
+
+
+/* Style the video: 100% width and height to cover the entire window */
+#bg-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+
+    filter: sepia(0.8);
+}
